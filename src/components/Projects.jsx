@@ -7,7 +7,7 @@ import comingsoon from '../assets/img/comingsoon.jpg'
 
 const ProjectBox = ({title, tech, github, live, image}) => (
     <div
-        className="project-box p-8 h-72 flex flex-col gap-12 relative bg-bg border border-white hover:bg-darkBlue transition-all duration-200 group overflow-hidden">
+        className="project-box p-6 md:p-8 h-64 md:h-72 flex flex-col gap-8 md:gap-12 relative bg-bg border border-white hover:bg-darkBlue transition-all duration-200 group overflow-hidden">
         {image && (
             <>
                 <div
@@ -20,19 +20,19 @@ const ProjectBox = ({title, tech, github, live, image}) => (
         )}
         <a href={live} target="_blank" rel="noopener noreferrer"
            className="absolute top-0 left-0 w-full h-full z-10"></a>
-        <div className="project-box__link self-end w-1/4 flex justify-end items-center relative z-20">
+        <div className="project-box__link self-end w-full flex justify-end items-center relative z-20">
             {github && (
                 <a href={github} target="_blank" rel="noopener noreferrer" className="mr-4">
-                    <FaGithub className="w-6 h-6 text-white"/>
+                    <FaGithub className="w-5 h-5 md:w-6 md:h-6 text-white"/>
                 </a>
             )}
             <a href={live} target="_blank" rel="noopener noreferrer">
-                <FaExternalLinkAlt className="w-6 h-6 text-white"/>
+                <FaExternalLinkAlt className="w-5 h-5 md:w-6 md:h-6 text-white"/>
             </a>
         </div>
         <div className="project-box__content self-center text-center relative z-20">
-            <h3 className="mb-12 tracking-tight leading-8 text-2xl font-extrabold capitalize text-whiteLight">{title}</h3>
-            <h5 className="text-secondColor text-base font-normal">{tech}</h5>
+            <h3 className="mb-8 md:mb-12 tracking-tight leading-8 text-xl md:text-2xl font-extrabold capitalize text-whiteLight">{title}</h3>
+            <h5 className="text-secondColor text-sm md:text-base font-normal">{tech}</h5>
         </div>
     </div>
 );
@@ -54,10 +54,10 @@ const Projects = () => {
     ];
 
     return (
-        <section id="projects" className="project max-w-7xl mx-auto py-24 px-4">
-            <h5 className="uppercase text-whiteLight text-sm tracking-[3px]">— check out some</h5>
-            <h2 className="text-4xl capitalize tracking-tighter">Stuff I’ve worked on 💻</h2>
-            <div className="project-item-container grid grid-cols-1 md:grid-cols-2 gap-16 mt-24">
+        <section id="projects" className="project max-w-7xl mx-auto py-16 md:py-24 px-4">
+            <h5 className="uppercase text-whiteLight text-xs md:text-sm tracking-[3px]">— check out some</h5>
+            <h2 className="text-3xl md:text-4xl capitalize tracking-tighter">Stuff I’ve worked on 💻</h2>
+            <div className="project-item-container grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mt-16 md:mt-24">
                 {projects.map((p, i) => <ProjectBox key={i} {...p} />)}
             </div>
         </section>
