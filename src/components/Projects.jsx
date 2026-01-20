@@ -2,7 +2,7 @@ import React from 'react';
 import {FaExternalLinkAlt, FaGithub} from 'react-icons/fa';
 import shopphone from '../assets/img/shopphone.png';
 import vpt from '../assets/img/vpt.png';
-import xunxian from '../assets/img/xunxian.jpg'
+import xunxian from '../assets/img/Xunxian.jpg'
 import comingsoon from '../assets/img/comingsoon.jpg'
 
 const ProjectBox = ({title, tech, github, live, image}) => (
