@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mainColor: #34a3a3;
+  --secondColor: #bae8e8;
+  --thirdColor: #27496d;
+  --pink: #fb839e;
+  --green-alt: #06d79c;
+  --purple: #8a49ff;
+  --bg: black;
+  --darkBlue: #0b0b0f;
+  --white: white;
+  --whiteLight: #ffffffcc;
+}
+
+[data-theme="light"] {
+  --mainColor: #39a2db;
+  --secondColor: #a2dbfa;
+  --thirdColor: #39a2db;
+  --pink: #ff94cc;
+  --green-alt: #a8dadc;
+  --purple: #a239ea;
+  --bg: #fff;
+  --darkBlue: #fcfcfc;
+  --white: #131313;
+  --whiteLight: #343a40;
+}
+
+body {
+  @apply font-sans font-light text-white bg-bg min-h-screen overflow-x-hidden scroll-smooth;
+  font-size: 16px; /* Adjusted from 10px for better readability */
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px 0;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--mainColor);
+}
+
+/* Cursor Effect */
+.cursor-effect {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  position: absolute;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  backdrop-filter: invert(1);
+}
+
+.link-grow {
+  transform: scale(2);
+  transform-origin: 100% 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Transitions */
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
+/* Utility Classes */
+.container {
+  @apply mx-auto w-full max-w-[1480px] px-4;
+}
+
+section {
+  @apply py-24;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-white font-semibold;
+}
+
+a {
+  @apply no-underline text-secondColor cursor-pointer;
+}
+
+/* Toggle Switch */
+.toggle-container {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 100;
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked + label {
+  background: var(--mainColor);
+}
+
+input[type=checkbox]:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.toggle {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: #d3d3d3;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.toggle:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.toggle:active:after {
+  width: 45px;
+}
