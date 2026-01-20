@@ -13,10 +13,6 @@ const Footer = () => {
             <p><a href="#" className="text-mainColor hover:text-thirdColor transition-colors duration-300">fb.com/...</a></p>
           </div>
           <div className="footer-links flex flex-row">
-            {/*<p className="ml-6"><a href="#" className="text-mainColor"><FaTwitter /></a></p>*/}
-            {/*<p className="ml-6"><a href="#" className="text-mainColor"><FaGithub /></a></p>*/}
-            {/*<p className="ml-6"><a href="#" className="text-mainColor"><FaLinkedin /></a></p>*/}
-            {/*<p className="ml-6"><a href="#" className="text-mainColor"><FaCodepen /></a></p>*/}
           </div>
         </div>
       </div>

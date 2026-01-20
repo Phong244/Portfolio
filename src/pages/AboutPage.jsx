@@ -4,7 +4,6 @@ import ThemeToggle from '../components/ThemeToggle';
 import avatar from '../assets/img/avatar.jpg'
 
 const AboutPage = () => {
-  // Placeholder data
   const skills = [
     'HTML', 'CSS/SASS', 'ReactJS', 'Javascript',
     'TailwindCSS', 'Redux',
@@ -22,7 +21,6 @@ const AboutPage = () => {
         'Adhered to React and NextJS best practices.',
       ],
     },
-    // Add more experiences...
   ];
 
   const educations = [
@@ -30,7 +28,6 @@ const AboutPage = () => {
       date: '2018-Present',
       title: 'BSc. in Computer Science - University Name'
     }
-    // Add more education...
   ]
 
 
@@ -70,8 +67,6 @@ const AboutPage = () => {
                     </div>
                 ))}
               </div>
-
-              {/* Tabs for Experience and Education can be added here */}
 
             </div>
           </div>

@@ -1,16 +1,5 @@
-// Global stylesheet using modern @use rule
-
-// Variables
 @use 'variables/variables';
-
-// Fonts
 @use 'fonts/fonts';
-
-// Global styling and components
 @use 'components/components';
-
-// Pages
 @use 'pages/pages';
-
-// Responsive
 @use 'responsive/responsive';

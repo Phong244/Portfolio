@@ -5,7 +5,6 @@ import ThemeToggle from './ThemeToggle';
 const Header = () => {
   return (
     <header className="w-full h-screen bg-darkBlue relative overflow-hidden">
-      {/* Shapes can be added here as decorative elements */}
       <Link to="/" className="logo fixed top-4 left-4 md:left-8 z-50">
         <img src="/logo.svg" alt="Logo" className="w-12 md:w-16 bg-bg bg-opacity-75 p-1" />
       </Link>

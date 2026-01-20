@@ -1,5 +1,4 @@
 .project {
-  // grid-column: 2/14;
   max-width: 1480px;
   margin: auto;
   padding: 6rem 0;
@@ -97,7 +96,6 @@
     justify-content: flex-end;
     align-items: center;
     @media only screen and (max-width: 56.25em) {
-      // tab-port
       width: 30%;
     }
     a ion-icon {
@@ -143,11 +141,6 @@
     background-color: var(--darkBlue);
     transition: all 0.2s ease;
   }
-  // &:hover img,
-  // h3,
-  // h5 {
-  //   filter: invert(1);
-  // }
   &:hover:after {
     transition: all 0.2s ease;
   }

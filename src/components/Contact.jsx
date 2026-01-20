@@ -2,10 +2,8 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-  // Initialize state with your Form ID
   const [state, handleSubmit] = useForm("xykkpoav");
 
-  // Display success message after submission
   if (state.succeeded) {
     return (
         <section id="contact" className="contact bg-bg max-w-7xl mx-auto mt-16 md:mt-24 pt-16 text-center px-4">
@@ -36,11 +34,9 @@ const Contact = () => {
             together on something? Feel free to reach out.
           </div>
 
-          {/* Formspree handleSubmit replaces traditional submission */}
           <form onSubmit={handleSubmit} className="w-full md:w-3/4 lg:w-1/2 min-w-[280px]">
 
             <div className="input-row flex flex-col md:flex-row justify-between gap-8 md:gap-0">
-              {/* Name field */}
               <div className="side w-full md:w-[45%]">
                 <label htmlFor="name" className="mt-5 block capitalize text-gray-400 text-xs mb-1">Your Name</label>
                 <input
@@ -54,7 +50,6 @@ const Contact = () => {
                 <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-500 text-xs mt-1" />
               </div>
 
-              {/* Email field */}
               <div className="side w-full md:w-[45%]">
                 <label htmlFor="email" className="mt-5 block capitalize text-gray-400 text-xs mb-1">Your Email</label>
                 <input
@@ -69,7 +64,6 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Message field */}
             <div className="textarea mt-8 md:mt-12">
               <label htmlFor="message" className="mt-5 block capitalize text-gray-400 text-xs mb-1">Your Message</label>
               <textarea

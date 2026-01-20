@@ -30,12 +30,11 @@
 
 body {
   @apply font-sans font-light text-white bg-bg min-h-screen overflow-x-hidden scroll-smooth;
-  font-size: 16px; /* Adjusted from 10px for better readability */
+  font-size: 16px;
   line-height: 1.6;
   letter-spacing: 1px;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
   border-radius: 10px 0;
@@ -47,7 +46,6 @@ body {
   background-color: var(--mainColor);
 }
 
-/* Cursor Effect */
 .cursor-effect {
   width: 2.5rem;
   height: 2.5rem;
@@ -66,7 +64,6 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* Transitions */
 html.transition,
 html.transition *,
 html.transition *:before,
@@ -75,7 +72,6 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
-/* Utility Classes */
 .container {
   @apply mx-auto w-full max-w-[1480px] px-4;
 }
@@ -92,7 +88,6 @@ a {
   @apply no-underline text-secondColor cursor-pointer;
 }
 
-/* Toggle Switch */
 .toggle-container {
     position: absolute;
     top: 2rem;

@@ -1,4 +1,3 @@
-//Custom scrollbar
 ::-webkit-scrollbar {
   width: 5px;
   border-radius: 10px 0;
@@ -10,7 +9,6 @@
   background-color: $mainColor;
 }
 
-//Bg animation effect
 .bg-animation-effect {
   position: fixed;
   top: 0;
@@ -51,7 +49,6 @@
     }
   }
 }
-//Cursor Effects
 .cursor-effect {
   width: 2rem;
   height: 2rem;
@@ -61,7 +58,6 @@
   pointer-events: none;
   position: absolute;
   transition: all 0.3s ease;
-  // transition-property: background, transform;
   transform-origin: 100% 100%;
   z-index: 1000;
   backdrop-filter: grayscale(100%);
@@ -75,7 +71,6 @@
   filter: invert(100%);
 }
 
-//GSAP Preloader
 .intro {
   background: $darkLight;
   position: fixed;
